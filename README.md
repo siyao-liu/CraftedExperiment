@@ -7,5 +7,20 @@ This repository contains the code for generating crafted datasets based on real 
 ### Please cite:
 
 
-### Example
+### Code
+
+The 3 cell line mixture dataset used in this analysis is in the `data` folder. 
+
+**Helper.R**: This script contains
+
+**1.GenerateCraftedGenes.R**: This script is used to randomly select genes for perturbation. The list of crafted genes are saved in the `crafted_datasets` folder.
+
+**2.GenerateCraftedExperiments_SparseRegion.R**:
+
+**3.GenerateCraftedExperiments_DenseRegion.R**:
+
+**4.GenerateCraftedExperiments_MediumRegion.R**:
+
+
+
 
