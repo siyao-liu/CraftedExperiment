@@ -13,7 +13,7 @@ This repository contains the code for generating crafted datasets based on real 
 
 ### Code
 
-The 3 cell line mixture dataset used in this analysis is in the `data` folder. 
+The 3 cell line mixture dataset used in this analysis is in the `data` folder. The `code` folder contains the R scripts listed below:
 
 **Helper.R**: This script contains the R functions used in the analysis.
 
