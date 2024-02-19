@@ -25,6 +25,10 @@ The 3 cell line mixture dataset used in this analysis is in the `data` folder.
 
 **4.GenerateCraftedExperiments_MediumRegion.R**: This scritp is used to generate crafted datasets via perturbing genes in the medium region. 
 
+All crafted datasets generated used from the scripts above are included in the `crafted_datasets` folder.
+
+All crafted genes and datasets generated in the paper are included in the `crafted_datasets_paper` folder. 
+
 
 
 
