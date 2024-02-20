@@ -17,19 +17,42 @@ The 3 cell line mixture dataset used in this analysis is in the `data` folder.
 
 The `code` folder contains the R scripts listed below:
 
-- **Helper.R**: This script contains the R functions used in the analysis.
+- `Helper.R`: This script contains the R functions used in the analysis.
 
-- **1.GenerateCraftedGenes.R**: This script is used to randomly select genes for perturbation. The list of crafted genes are saved in the `crafted_datasets` folder.
+- `1.GenerateCraftedGenes.R`: This script is used to randomly select genes for perturbation. The list of crafted genes are saved in the `crafted_datasets` folder.
 
-- **2.GenerateCraftedExperiments_SparseRegion.R**: This scritp is used to generate crafted datasets via perturbing genes in the sparse region. 
+- `2.GenerateCraftedExperiments_SparseRegion.R`: This scritp is used to generate crafted datasets via perturbing genes in the sparse region. 
 
-- **3.GenerateCraftedExperiments_DenseRegion.R**: This scritp is used to generate crafted datasets via perturbing genes in the dense region. 
+- `3.GenerateCraftedExperiments_DenseRegion.R`: This scritp is used to generate crafted datasets via perturbing genes in the dense region. 
 
-- **4.GenerateCraftedExperiments_MediumRegion.R**: This scritp is used to generate crafted datasets via perturbing genes in the medium region. 
+- `4.GenerateCraftedExperiments_MediumRegion.R`: This scritp is used to generate crafted datasets via perturbing genes in the medium region. 
 
-All crafted datasets generated used from the scripts above are included in the `crafted_datasets` folder.
 
-All crafted genes and datasets generated in the paper are included in the `crafted_datasets_paper` folder. 
+All crafted datasets generated used from the scripts above are included in the `crafted_datasets` folder:
+
+
+
+
+
+
+All 24 crafted genes and datasets generated in the paper are included in the `crafted_datasets_paper` folder:
+
+- `230131_Sparse_AddPois0.5_crafteddata.rds`:
+  
+- `230131_Dense_AddCount10_crafteddata.rds`:
+  
+- `230131_Dense_AddPoisF1.5_crafteddata.rds`:
+  
+- `230411_Medium_AddCount2_craftedata.rds`:
+  
+- `230411_Medium_AddPois1.5_craftedata.rds`:
+  
+- `230411_Medium_AddPoisF3_craftedata.rds`:
+
+
+
+  
+
 
 
 
