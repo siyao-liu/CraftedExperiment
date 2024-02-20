@@ -11,19 +11,21 @@ This repository contains the code for generating crafted datasets based on real 
 
 
 
-### Code
+### Description
 
-The 3 cell line mixture dataset used in this analysis is in the `data` folder. The `code` folder contains the R scripts listed below:
+The 3 cell line mixture dataset used in this analysis is in the `data` folder. 
 
-**Helper.R**: This script contains the R functions used in the analysis.
+The `code` folder contains the R scripts listed below:
 
-**1.GenerateCraftedGenes.R**: This script is used to randomly select genes for perturbation. The list of crafted genes are saved in the `crafted_datasets` folder.
+- **Helper.R**: This script contains the R functions used in the analysis.
 
-**2.GenerateCraftedExperiments_SparseRegion.R**: This scritp is used to generate crafted datasets via perturbing genes in the sparse region. 
+- **1.GenerateCraftedGenes.R**: This script is used to randomly select genes for perturbation. The list of crafted genes are saved in the `crafted_datasets` folder.
 
-**3.GenerateCraftedExperiments_DenseRegion.R**: This scritp is used to generate crafted datasets via perturbing genes in the dense region. 
+- **2.GenerateCraftedExperiments_SparseRegion.R**: This scritp is used to generate crafted datasets via perturbing genes in the sparse region. 
 
-**4.GenerateCraftedExperiments_MediumRegion.R**: This scritp is used to generate crafted datasets via perturbing genes in the medium region. 
+- **3.GenerateCraftedExperiments_DenseRegion.R**: This scritp is used to generate crafted datasets via perturbing genes in the dense region. 
+
+- **4.GenerateCraftedExperiments_MediumRegion.R**: This scritp is used to generate crafted datasets via perturbing genes in the medium region. 
 
 All crafted datasets generated used from the scripts above are included in the `crafted_datasets` folder.
 
