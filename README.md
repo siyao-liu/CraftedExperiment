@@ -18,17 +18,7 @@ From each gene region, we randomly selected 600, 300, 100, and 50 genes to contr
 
 ### Description
 
-The 3 cell line mixture dataset used in this analysis is in the `data` folder. 
-
-
-
-All crafted datasets generated from the scripts above are included in the `crafted_datasets` folder:
-
-
-
-
-
-
+The 3 cell line mixture dataset used in this analysis is in the `data` folder. All the R scripts used to generate the crafted datasets are in the `code` folder. All crafted datasets generated from the code are included in the `crafted_datasets` folder:
 
 
 ### Example
