@@ -29,7 +29,7 @@ crafted.dl <- lapply(goi.list[2:5], function(x) {
   AddCount(data=dat, genes=x, c.ind=c.ind, C=2) 
   }
 )
-saveRDS(crafted.dl, file="crafted_datasets/Medium_AddCount2_craftedata.rds")
+saveRDS(crafted.dl, file=paste0("crafted_datasets/Medium_AddCount2_craftedata_seed", myseed, ".rds"))
 
 
 #### Add Pois(1.5) ###
@@ -37,7 +37,7 @@ crafted.dl <- lapply(goi.list[2:5], function(x) {
   AddPois(data=dat, genes=x, c.ind=c.ind, lambda=1.5)
   }
 )
-saveRDS(crafted.dl, file="crafted_datasets/Medium_AddPois1.5_craftedata.rds")
+saveRDS(crafted.dl, file=paste0("crafted_datasets/Medium_AddPois1.5_craftedata_seed", myseed, ".rds"))
 
 
 #### Add Pois(3*count) ###
@@ -45,4 +45,5 @@ crafted.dl <- lapply(goi.list[2:5], function(x) {
   AddPoisF(data=dat, genes=x, c.ind=c.ind, lambda=3)
   }
 )
-saveRDS(crafted.dl, file="crafted_datasets/Medium_AddPoisF3_craftedata.rds")
+saveRDS(crafted.dl, file=paste0("crafted_datasets/Medium_AddPoisF3_craftedata_seed", myseed, ".rds"))
+

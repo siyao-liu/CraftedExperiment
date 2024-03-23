@@ -25,7 +25,7 @@ crafted.dl <- lapply(goi.list[2:5], function(x) {
   AddPois(data=dat, genes=x, c.ind=c.ind, lambda=0.5) 
 }
 )
-saveRDS(crafted.dl, file=paste0("crafted_datasets/Sparse_AddPois0.5_crafteddata.rds"))
+saveRDS(crafted.dl, file=paste0("crafted_datasets/Sparse_AddPois0.5_crafteddata_seed", myseed, ".rds"))
 
 
 

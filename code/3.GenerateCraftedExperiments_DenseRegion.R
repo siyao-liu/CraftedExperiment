@@ -26,7 +26,7 @@ crafted.dl <- lapply(goi.list[2:5], function(x) {
   AddCount(data=dat, genes=x, c.ind=c.ind, C=10) 
   }
 )
-saveRDS(crafted.dl, file=paste0("crafted_datasets/Dense_AddCount10_crafteddata.rds"))
+saveRDS(crafted.dl, file=paste0("crafted_datasets/Dense_AddCount10_crafteddata_seed", myseed, ".rds"))
 
 
 #### Add Pois(1.5*count) ####
@@ -34,7 +34,7 @@ crafted.dl <- lapply(goi.list[2:5], function(x) {
   AddPoisF(data=dat, genes=x, c.ind=c.ind, lambda=1.5) 
   }
 )
-saveRDS(crafted.dl, file="crafted_datasets/Dense_AddPoisF1.5_crafteddata.rds")
+saveRDS(crafted.dl, file=paste0("crafted_datasets/Dense_AddPoisF1.5_crafteddata_seed", myseed, ".rds"))
 
 
 

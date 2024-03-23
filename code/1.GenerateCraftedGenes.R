@@ -24,8 +24,8 @@ df <- data.frame("lum.tct"=lum.tct, "lum.zp"=lum.zp, "gene"=rownames(dat))
 df$lum.avg <- df$lum.tct/541
 
 #### Sparse region: select genes with zero proportion above 0.9 ####
-s.goi <- df[df$lum.zp >0.9 & df$lum.tct!=0, ]$gene
-
+s.goi <- df[df$lum.zp > 0.9 & df$lum.tct!=0, ]$gene
+num.genes <- 600
 s.600 <- sample(x=s.goi, size=num.genes, replace = FALSE)
 s.300 <- sample(x=s.600, size=300, replace = FALSE)
 s.100 <- sample(x=s.300, size=100, replace = FALSE)
@@ -40,14 +40,11 @@ d.goi <- df[df$lum.zp < 0.1 & df$lum.tct!=0, ]$gene
 # Nested randomly select 600 genes, 300 genes, 100 genes, 50 genes
 num.genes <- 600
 d.600 <- sample(x=d.goi, size=num.genes, replace = FALSE)
-
 d.300 <- sample(x=d.600, size=300, replace = FALSE)
-
 d.100 <- sample(x=d.300, size=100, replace = FALSE)
-
 d.50 <- sample(x=d.100, size=50, replace = FALSE)
 
-d.list <- list("d.goi"=d.goi, "d.600"=s.600, "d.300"=lo.300, "d.100"=d.100, "d.50"=d.50)
+d.list <- list("d.goi"=d.goi, "d.600"=s.600, "d.300"=d.300, "d.100"=d.100, "d.50"=d.50)
 saveRDS(s.list, paste0("crafted_datasets/CraftedGenes_Dense.list_seed", myseed, ".rds"))
 
 
@@ -59,9 +56,9 @@ myseed <- 2023
 set.seed(myseed)
 
 m.600 <- sample(x=goi, size=num.genes, replace = FALSE)
-m.300 <- sample(x=goi.600, size=300, replace = FALSE)
-m.100 <- sample(x=goi.300, size=100, replace = FALSE)
-m.50 <- sample(x=goi.100, size=50, replace = FALSE)
+m.300 <- sample(x=m.600, size=300, replace = FALSE)
+m.100 <- sample(x=m.300, size=100, replace = FALSE)
+m.50 <- sample(x=m.100, size=50, replace = FALSE)
 
 m.list <- list("m.goi"=goi, "m.600"=m.600, "m.300"=m.300, "m.100"=m.100, "m.50"=m.50)
 saveRDS(m.list, paste0("crafted_datasets/CraftedGenes_Medium.list_seed", myseed, ".rds"))
